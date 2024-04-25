@@ -34,6 +34,27 @@ agrol
 
 ## Dataset Preparation
 Please download the AMASS dataset from [here](https://amass.is.tue.mpg.de/)(SMPL+H G).
+
+[shortcut]Link to download :
+SPML+H : [here](https://download.is.tue.mpg.de/download.php?domain=mano&sfile=smplh.tar.xz&resume=1)(SPML+H)
+DMPLs : [here](https://download.is.tue.mpg.de/download.php?domain=mano&sfile=smplh.tar.xz&resume=1)(DMPLs)
+
+Note : you need to register the account before download. Then create both folders and setup both models in this format. The repo should look like 
+
+```
+agrol
+├── smplh
+├──── female/
+├──── male/
+├──── neutral/
+├──── ...
+├── dmpls
+├──── female/
+├──── male/
+├──── neutral/
+├──── ...
+```
+
 ```
 python prepare_data.py --support_dir /path/to/your/smplh/dmpls --save_dir ./dataset/AMASS/ --root_dir /path/to/your/amass/dataset
 ```
